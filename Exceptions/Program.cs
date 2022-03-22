@@ -7,7 +7,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string file = @"c:\input\text.txt";
-            int x = 0;
+            int x = 0; 
             try
             {
                 int y = 100 / x;
