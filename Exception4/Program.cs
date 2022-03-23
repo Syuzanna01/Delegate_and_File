@@ -8,7 +8,7 @@ class Exe : Exception
         if (k != a)
         {
             throw new NotImplementedException();
-        } 
+        }
     }
 }
 class Program

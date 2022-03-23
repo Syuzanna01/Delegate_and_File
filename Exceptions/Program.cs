@@ -1,23 +1,24 @@
 ﻿//1
 using System;
-namespace ConsoleApp1
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        int[] arr = { 1, 2, 3, 4, 5 };
+
+        for (int i = 0; i < arr.Length; i++)
         {
-            string file = @"c:\input\text.txt";
-            int x = 0; 
-            try
-            {
-                int y = 100 / x;
-            }
-            catch (Exception)
-            {
-                string l = "Exclusion error:";
-                File.WriteAllText(file, l);
-            }
-            Console.ReadKey();
+            Console.WriteLine(arr[i]);
+        }
+
+        try
+        {
+            Console.WriteLine(arr[7]);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("An Exception has occurred : {0}", e.Message);
         }
     }
 }
+
