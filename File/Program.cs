@@ -13,7 +13,7 @@ namespace ConsoleApp1
 
             File.Copy(file, file1);
             File.Delete(file);
-
+             
             string filetry = @"c:\input\texttry.txt";
             int x = 0;
             try
