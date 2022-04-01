@@ -23,7 +23,7 @@ namespace ConsoleApp1
             File.Copy(file, file1);
             File.Delete(file);
 
-        }
+        } 
         static void WriteTry()
         {
             string filetry = @"c:\input\texttry.txt";
