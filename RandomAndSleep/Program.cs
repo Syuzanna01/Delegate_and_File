@@ -6,9 +6,13 @@ namespace RandomAndSleep
     {
         static void Main()
         {
-            Random random = new Random();
+            Random random = new();
+
+            Console.Write("n = ");
 
             int n = int.Parse(Console.ReadLine());
+            
+            Console.Write("m = ");
 
             int m = int.Parse(Console.ReadLine());
 
