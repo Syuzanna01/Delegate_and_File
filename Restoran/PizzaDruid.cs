@@ -1,17 +1,21 @@
 ﻿using ConsoleApp1;
 using Restoran;
 using static CafeDruid;
+using static Program;
 
 class PizzaDruid : DruidClab, Interface1
 {
-    public int Price1(int P, int t)
+    public void Price1(int P)
+    {
+        Price = P;
+    }
+    public int Price2(int P, int t)
     {
         int count = 0;
         Price = P;
-        count += t*P;
+        count += t * P;
         return count;
     }
-
     public int Price { get; set; }
 
     public void Pizza()

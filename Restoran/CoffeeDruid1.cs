@@ -1,24 +1,24 @@
 ﻿using ConsoleApp1;
 using Restoran;
+using static Program;
 
 class CafeDruid : DruidClab, Interface1
 {
+    public int Price { get ; set; }
 
-
-    public CafeDruid()
+    public void Price1(int P)
     {
-    }
-    public int Price1(int P,int t)
-    {
-        int count= 0;
         Price = P;
-        count += t*P;
+    }
+    public int Price2(int P, int t)
+    {
+        int count = 0;
+        Price = P;
+        count += t * P;
         return count;
     }
 
-    public int Price { get ; set; }
 
-    public delegate string Delegatee(ref string b);
     public void Coffee()
     {
         Console.Write("Coffee - ");
